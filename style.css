@@ -1,0 +1,144 @@
+/* Estilos personalizados */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-thumbnail {
+    transition: all 0.3s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para la sección de curiosidades */
+
+#curiosidades .card {
+    border-width: 3px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+#curiosidades .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+#curiosidadImagen {
+    max-height: 300px;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+    transition: transform 0.3s;
+}
+
+#cambiarCuriosidad:hover {
+    transform: scale(1.02);
+}
+
+#curiosidadTexto {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para la sección de información general unificada */
+
+#informacion-general .rounded-3 {
+    border: 1px solid #dee2e6;
+}
+
+#informacion-general h2 {
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#informacion-general h3 {
+    color: #333;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#informacion-general h4 {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.dino-timeline .timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.dino-timeline .timeline-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.dino-timeline .timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0d6efd;
+}
+
+.dino-timeline .timeline-item:after {
+    content: '';
+    position: absolute;
+    left: -1.9rem;
+    top: 20px;
+    bottom: 0;
+    width: 2px;
+    background: #0d6efd;
+}
+
+.dino-timeline .timeline-item:last-child:after {
+    display: none;
+}
+
+.dino-facts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dino-facts .fa-ul {
+    margin-left: 1.5em;
+}
+
+#informacion-general img {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
